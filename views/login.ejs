@@ -1,0 +1,71 @@
+
+
+<!-- <form action="/login" method="POST">
+  <div>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+  <div>
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required>
+  </div>
+  <button type="submit">Login</button>
+</form>
+<a href="/register">Register</a> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    /* body{background: #000}.card{border: none;height: 320px}.forms-inputs{position: relative}.forms-inputs span{position: absolute;top:-18px;left: 10px;background-color: #fff;padding: 5px 10px;font-size: 15px}.forms-inputs input{height: 50px;border: 2px solid #eee}.forms-inputs input:focus{box-shadow: none;outline: none;border: 2px solid #000}.btn{height: 50px}.success-data{display: flex;flex-direction: column}.bxs-badge-check{font-size: 90px} */
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-6">
+          <form action="/login" method="POST">
+            <div class="card px-5 py-5" id="form1">
+              <div class="card-header"><h1>Login</h1></div>
+              <div class="card-body">
+                <div class="form-data" >
+                    <div class="row mb-3"> 
+                      <div class="col-md-3">
+                        <label class="" for="email">Email</label> 
+                      </div>
+                      <div class="col">
+                        <input name="email" class="form-control" autocomplete="off" type="text">
+                      </div>
+                      <div class="invalid-feedback">A valid email is required!</div>
+                    </div>
+                    <div class="row mb-3"> 
+                      <label class="col-md-3" for="password">Password</label> 
+                      <div class="col">
+                        <input class="form-control" name="password" autocomplete="off" type="password">
+                      </div>
+                      <div class="invalid-feedback">Password must be 8 character!</div>
+                    </div>
+                    <div class="mb-3"> <button type="submit" class="btn btn-dark w-100">Login</button> </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <a href="/register">Register</a> 
+                </div>
+              </div>
+                <% if (messages.error) { %>
+                  <%= messages.error %>
+                <% } %>
+            </div>
+          </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+  <!-- <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/main.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  <script>
+  </script>

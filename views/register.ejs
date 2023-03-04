@@ -1,0 +1,77 @@
+<!-- <html>
+    <body>
+        <form action="/register" method="post">
+            <div class="">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email">
+            </div>
+    
+            <div class="">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <a href="/login">Login</a>
+    </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <div class="row d-flex justify-content-center mt-5">
+        <div class="col-md-6 card">
+            <div class="card-header d-flex justify-content-center">
+              <h1>Register</h1>
+            </div>
+            <div class="card-body">
+                <form action="/register" method="post">
+
+                <div class="form-data" >
+                    <div class="row mb-3"> 
+                      <div class="col-md-3">
+                        <label class="" for="name">Name</label> 
+                      </div>
+                      <div class="col">
+                        <input name="name" class="form-control" autocomplete="off" type="text">
+                      </div>
+                      <div class="invalid-feedback">A valid email is required!</div>
+                    </div>
+                    <div class="row mb-3"> 
+                      <div class="col-md-3">
+                        <label class="" for="email">Email</label> 
+                      </div>
+                      <div class="col">
+                        <input name="email" class="form-control" autocomplete="off" type="text">
+                      </div>
+                      <div class="invalid-feedback">A valid email is required!</div>
+                    </div>
+                    <div class="row mb-3"> 
+                      <label class="col-md-3" for="password">Password</label> 
+                      <div class="col">
+                        <input class="form-control" name="password" autocomplete="off" type="password">
+                      </div>
+                      <div class="invalid-feedback">Password must be 8 character!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="mb-3"> <button type="submit" class="btn btn-dark w-100">Register</button> </div>
+            </div>
+        </form>
+          </div>
+    </div>
+</body>
+</html>
